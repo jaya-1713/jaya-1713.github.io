@@ -97,18 +97,14 @@
         </div>
     </nav>
 
-    <!-- Main Home / Hero Section (Focus is now purely on Name and Bio) -->
+    <!-- Main Home / Hero Section -->
     <header id="home" class="py-24 md:py-32 lg:py-40 px-4 relative overflow-hidden">
         <div class="max-w-6xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-10 md:gap-16">
             
-            <!-- Profile Picture Column (Uses absolute glow effect) -->
+            <!-- Profile Picture Column -->
             <div class="flex-shrink-0 relative order-1 md:order-2">
-                <!-- Decorative Glow Ring (Outer layer) -->
                 <div class="absolute -inset-2 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 blur-sm opacity-50 animate-pulse-slow"></div>
-                
-                <!-- Circular Image Container -->
                 <div class="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full border-4 border-gray-950 bg-gray-900 shadow-2xl shadow-blue-500/30 overflow-hidden">
-                    <!-- Locates profile.jpg in the same GitHub repository directory -->
                     <img 
                         src="./profile.jpg" 
                         alt="Yepuri Jaya Naga Sri - Professional Profile Picture" 
@@ -120,21 +116,15 @@
 
             <!-- Introduction & Name Content Column -->
             <div class="text-center md:text-left flex-grow order-2 md:order-1">
-                <!-- Status Badge -->
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6 tracking-wide uppercase">
                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span> Actively Seeking Opportunities
                 </span>
-                
-                <!-- PRIMARY PAGE TITLE: Large, prominent Name in Gradient Font -->
                 <h1 class="heading-font text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-8 leading-tight">
                     <span class="premium-gradient-text">Yepuri Jaya Naga Sri</span>
                 </h1>
-                
-                <!-- Professional Bio & Summary -->
                 <p class="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto md:mx-0 mb-12 leading-relaxed">
                     Aspiring Software Engineer specializing in Java application architectures, structured database management, and emerging Machine Learning pipelines. Focused on engineering robust, quantitative data solutions.
                 </p>
-                <!-- Major Action Call-to-Action Buttons -->
                 <div class="flex flex-wrap justify-center md:justify-start gap-5">
                     <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-7 py-3.5 md:py-4 rounded-xl font-semibold transition shadow-lg shadow-blue-500/25 text-sm tracking-wide">
                         Get in Touch
@@ -154,8 +144,6 @@
             <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-3">Professional Summary</h2>
             <p class="text-gray-400 text-sm md:text-base">Bridging statistical theory with core computing mechanics to deliver high-performance applications.</p>
         </div>
-        
-        <!-- About Feature Cards -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="glass-panel p-8 rounded-2xl transition hover:-translate-y-1">
                 <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 mb-6 text-xl">
@@ -165,7 +153,6 @@
                 <p class="text-gray-400 text-sm mb-4">Graduating with a Bachelor of Science specialized in Statistics, maintaining advanced academic performance thresholds.</p>
                 <div class="text-blue-400 font-bold text-sm tracking-wide bg-blue-500/5 inline-block px-2.5 py-1 rounded border border-blue-500/10">CGPA: 9.20</div>
             </div>
-
             <div class="glass-panel p-8 rounded-2xl transition hover:-translate-y-1">
                 <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 text-xl">
                     <i class="fa-solid fa-layer-group"></i>
@@ -174,7 +161,6 @@
                 <p class="text-gray-400 text-sm mb-4">Deep immersion into OOP structures, relational logic designs, structural query optimizations, and web interface architectures.</p>
                 <div class="text-indigo-400 font-bold text-sm tracking-wide bg-indigo-500/5 inline-block px-2.5 py-1 rounded border border-indigo-500/10">Backend & Web focus</div>
             </div>
-
             <div class="glass-panel p-8 rounded-2xl transition hover:-translate-y-1">
                 <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-6 text-xl">
                     <i class="fa-solid fa-microchip"></i>
@@ -193,8 +179,6 @@
                 <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-3">Technical Architecture</h2>
                 <p class="text-gray-400 text-sm md:text-base">Engineered domain capabilities across software development toolchains.</p>
             </div>
-
-            <!-- Skill Progress Bars -->
             <div class="space-y-6">
                 <div>
                     <div class="flex justify-between mb-2 text-sm font-medium">
@@ -205,7 +189,6 @@
                         <div class="bg-gradient-to-r from-blue-500 to-indigo-500 h-full rounded-full" style="width: 90%"></div>
                     </div>
                 </div>
-
                 <div>
                     <div class="flex justify-between mb-2 text-sm font-medium">
                         <span class="text-gray-300"><i class="fa-solid fa-database text-blue-400 mr-2 w-4"></i> Relational Databases & SQL (Queries, Joins, Normalization)</span>
@@ -215,7 +198,6 @@
                         <div class="bg-gradient-to-r from-blue-500 to-indigo-500 h-full rounded-full" style="width: 85%"></div>
                     </div>
                 </div>
-
                 <div>
                     <div class="flex justify-between mb-2 text-sm font-medium">
                         <span class="text-gray-300"><i class="fa-solid fa-code text-indigo-400 mr-2 w-4"></i> Web Technologies (HTML5, CSS3, Modern JavaScript)</span>
@@ -225,7 +207,6 @@
                         <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-full rounded-full" style="width: 85%"></div>
                     </div>
                 </div>
-
                 <div>
                     <div class="flex justify-between mb-2 text-sm font-medium">
                         <span class="text-gray-300"><i class="fa-solid fa-robot text-purple-400 mr-2 w-4"></i> Intelligent Ecosystems (Machine Learning Pipelines, RPA Frameworks)</span>
@@ -245,10 +226,7 @@
             <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-3">Industry Internships</h2>
             <p class="text-gray-400 text-sm md:text-base">Practical tech validation within rigorous collaborative programs.</p>
         </div>
-
-        <!-- Vertical Timeline layout -->
         <div class="relative border-l border-gray-800 ml-4 space-y-12 z-10">
-            <!-- Timeline Item 1 -->
             <div class="relative pl-9 group">
                 <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-gray-900 transition-transform group-hover:scale-125 shadow-lg shadow-blue-500/20"></div>
                 <span class="text-xs font-semibold text-blue-400 tracking-wider uppercase bg-blue-500/5 px-2.5 py-0.5 rounded border border-blue-500/10">2025</span>
@@ -258,8 +236,6 @@
                     Immersive deep dive into computer vision layers, natural language data processing matrices, structural hyperparameter optimizations, and foundational artificial intelligence models.
                 </p>
             </div>
-
-            <!-- Timeline Item 2 -->
             <div class="relative pl-9 group">
                 <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-gray-900 transition-transform group-hover:scale-125 shadow-lg shadow-indigo-500/20"></div>
                 <span class="text-xs font-semibold text-indigo-400 tracking-wider uppercase bg-indigo-500/5 px-2.5 py-0.5 rounded border border-indigo-500/10">2025</span>
@@ -279,10 +255,7 @@
                 <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-3">Technical Deployments</h2>
                 <p class="text-gray-400 text-sm md:text-base">Showcasing functional architectures and programming implementations.</p>
             </div>
-
-            <!-- Two-Column Projects Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Project Card 1: Food Recipe Platform -->
                 <div class="glass-panel rounded-2xl overflow-hidden group hover:border-gray-700 transition flex flex-col justify-between">
                     <div class="p-8">
                         <div class="flex items-center justify-between mb-6">
@@ -300,13 +273,11 @@
                         </div>
                     </div>
                     <div class="p-8 pt-0 border-t border-gray-900/50 mt-auto flex items-center gap-4">
-                        <a href="url?id=1" target="_blank" class="text-xs text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors">
+                        <a href="https://github.com/jaya-1713" target="_blank" class="text-xs text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors">
                             <i class="fa-brands fa-github"></i> Repository Code
                         </a>
                     </div>
                 </div>
-
-                <!-- Project Card 2: SQL Database Architecture -->
                 <div class="glass-panel rounded-2xl overflow-hidden group hover:border-gray-700 transition flex flex-col justify-between">
                     <div class="p-8">
                         <div class="flex items-center justify-between mb-6">
@@ -323,7 +294,7 @@
                         </div>
                     </div>
                     <div class="p-8 pt-0 border-t border-gray-900/50 mt-auto flex items-center gap-4">
-                        <a href="url?id=1" target="_blank" class="text-xs text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors">
+                        <a href="https://github.com/jaya-1713" target="_blank" class="text-xs text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors">
                             <i class="fa-brands fa-github"></i> Core Structure
                         </a>
                     </div>
@@ -338,17 +309,13 @@
             <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-3">Education Matrix</h2>
             <p class="text-gray-400 text-sm md:text-base">Quantitative sciences and foundational analytical tracking.</p>
         </div>
-
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
-            <!-- B.Sc. Statistics Card -->
             <div class="glass-panel p-8 rounded-2xl relative border-l-4 border-l-blue-500 transition hover:-translate-y-1">
                 <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider block mb-2">Graduation Stream</span>
                 <h3 class="heading-font text-lg font-bold text-white mb-1">Bachelor of Science (B.Sc. Statistics)</h3>
                 <p class="text-gray-400 text-sm mb-4">Aditya Degree College, Asilmetta</p>
                 <div class="text-xs text-gray-500 font-medium bg-blue-500/5 px-2.5 py-1 rounded inline-block">Score: <span class="text-white font-bold ml-1">CGPA 9.20</span></div>
             </div>
-
-            <!-- Intermediate MPC Card -->
             <div class="glass-panel p-8 rounded-2xl relative border-l-4 border-l-indigo-500 transition hover:-translate-y-1">
                 <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider block mb-2">Intermediate Framework</span>
                 <h3 class="heading-font text-lg font-bold text-white mb-1">MPC (Mathematics, Physics, Chemistry)</h3>
@@ -358,7 +325,7 @@
         </div>
     </section>
 
-    <!-- Contact section -->
+    <!-- Contact section (INTEGRATED WITH LIVE FORMSPREE BACKEND) -->
     <section id="contact" class="py-24 max-w-xl mx-auto px-4 border-t border-gray-900 relative overflow-hidden">
         <div class="text-center max-w-2xl mx-auto mb-12 relative z-10">
             <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-3">Initiate Connection</h2>
@@ -371,7 +338,8 @@
             <a href="mailto:joshuyepuri@gmail.com" class="text-sm font-bold text-blue-400 hover:underline">joshuyepuri@gmail.com</a>
         </div>
 
-        <form class="space-y-6 relative z-10" onsubmit="event.preventDefault(); alert('Transmission simulated successfully to joshuyepuri@gmail.com');">
+        <!-- Working form endpoint using Formspree -->
+        <form action="https://formspree.io/f/joshuyepuri@gmail.com" method="POST" class="space-y-6 relative z-10">
             <div>
                 <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Identity Signature</label>
                 <input type="text" name="name" placeholder="Full Name" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition text-sm placeholder-gray-600">
