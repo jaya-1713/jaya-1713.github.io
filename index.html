@@ -339,24 +339,43 @@
         </div>
 
         <!-- Working form endpoint using Formspree -->
-        <form action="https://formspree.io/f/xaqrezqn" method="POST" class="space-y-6 relative z-10">
-            <div>
-                <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Identity Signature</label>
-                <input type="text" name="name" placeholder="Full Name" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition text-sm placeholder-gray-600">
-            </div>
-            <div>
-                <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Communication Endpoint</label>
-                <input type="email" name="_replyto" placeholder="email@enterprise.com" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition text-sm placeholder-gray-600">
-            </div>
-            <div>
-                <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Context Payload</label>
-                <textarea name="message" rows="4" placeholder="Type your inquiry metrics here..." required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition text-sm placeholder-gray-600"></textarea>
-            </div>
-            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-4 rounded-xl transition shadow-lg shadow-blue-500/25 text-sm tracking-wide uppercase">
-                Dispatch System Message
-            </button>
-        </form>
-    </section>
+<!-- Contact Form -->
+<form id="contactForm" class="space-y-6 relative z-10">
+    <div>
+        <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Identity Signature</label>
+        <input type="text" id="senderName" placeholder="Full Name" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition text-sm placeholder-gray-600">
+    </div>
+    <div>
+        <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Communication Endpoint</label>
+        <input type="email" id="senderEmail" placeholder="email@enterprise.com" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition text-sm placeholder-gray-600">
+    </div>
+    <div>
+        <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Context Payload</label>
+        <textarea id="senderMessage" rows="4" placeholder="Type your inquiry metrics here..." required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition text-sm placeholder-gray-600"></textarea>
+    </div>
+    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-4 rounded-xl transition shadow-lg shadow-blue-500/25 text-sm tracking-wide uppercase">
+        Dispatch System Message
+    </button>
+</form>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('senderName').value;
+        const email = document.getElementById('senderEmail').value;
+        const message = document.getElementById('senderMessage').value;
+        
+        const targetEmail = "joshuyepuri@gmail.com";
+        const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
+        
+        const bodyContent = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+        const body = encodeURIComponent(bodyContent);
+        
+        // Triggers the user's native email client with absolute direct routing
+        window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
+    });
+</script>
 
     <!-- Site Footer -->
     <footer class="py-12 border-t border-gray-900 bg-gray-950/20 text-center">
