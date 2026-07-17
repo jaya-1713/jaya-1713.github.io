@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yepuri Jaya Naga Sri | Professional Portfolio</title>
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0f19;
+        }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+        }
+        .glass-nav {
+            background: rgba(11, 15, 25, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.2; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(1.1); }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 8s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-gray-200 min-h-screen relative selection:bg-blue-600 selection:text-white">
+
+    <!-- Background Shadows -->
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-slow"></div>
+    <div class="absolute top-[40%] left-0 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[100px] pointer-events-none -z-10 animate-pulse-slow" style="animation-delay: 2s;"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-gray-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="heading-font text-xl font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent tracking-tight">
+                YJNS<span class="text-blue-500">.</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a>
+                <a href="#skills" class="text-gray-400 hover:text-white transition-colors">Skills</a>
+                <a href="#experience" class="text-gray-400 hover:text-white transition-colors">Experience</a>
+                <a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
+                <a href="#education" class="text-gray-400 hover:text-white transition-colors">Education</a>
+                <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/jaya-1713" target="_blank" class="text-gray-400 hover:text-white text-lg transition-colors">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition shadow-lg shadow-blue-500/20">
+                    Resume <i class="fa-solid fa-arrow-down ml-1 text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home / Hero Section (Structure updated to hold picture) -->
+    <header id="home" class="pt-36 pb-24 px-4 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12">
+            
+            <!-- Profile Picture Column -->
+            <div class="flex-shrink-0 relative order-1 md:order-2">
+                <!-- Decorative Ring (Outer Glow) -->
+                <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 blur opacity-60 animate-pulse-slow"></div>
+                
+                <!-- Image Container -->
+                <div class="relative w-44 h-44 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-gray-950 bg-gray-900 shadow-2xl shadow-blue-500/20">
+                    <img 
+                        src="profile.jpg" 
+                        alt="Yepuri Jaya Naga Sri" 
+                        class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                        onerror="this.onerror=null; this.src='https://via.placeholder.com/300?text=Place+profile.jpg+Here'; this.alt='Image Missing';"
+                    >
+                </div>
+            </div>
+
+            <!-- Text Content Column -->
+            <div class="text-center md:text-left flex-grow order-2 md:order-1">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6 tracking-wide uppercase">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span> Actively Seeking Opportunities
+                </span>
+                <h1 class="heading-font text-4xl sm:text-5xl font-bold tracking-tight mb-6 text-white leading-tight">
+                    Turning Complex Data Into <br class="hidden sm:inline">
+                    <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Enterprise Software Solutions</span>
+                </h1>
+                <p class="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto md:mx-0 mb-10 leading-relaxed">
+                    Hi, I'm <strong class="text-white font-medium">Yepuri Jaya Naga Sri</strong>. An aspiring Software Engineer specializing in Java application architectures, structured database management, and emerging Machine Learning pipelines.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3.5 rounded-xl font-medium transition shadow-lg shadow-blue-500/20 text-sm tracking-wide">
+                        Get in Touch
+                    </a>
+                    <a href="#projects" class="glass-panel hover:bg-gray-800/80 text-gray-200 px-6 py-3.5 rounded-xl font-medium transition text-sm border border-gray-800 tracking-wide">
+                        View Portfolio Projects
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 max-w-5xl mx-auto px-4 border-t border-gray-900">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="heading-font text-2xl sm:text-3xl font-bold text-white mb-3">Professional Summary</h2>
+            <p class="text-gray-400 text-sm">Bridging statistical theory with core computing mechanics to deliver high-performance applications.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass-panel p-8 rounded-2xl transition hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 mb-6 text-xl">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3 class="heading-font font-bold text-lg text-white mb-2">Education Profile</h3>
+                <p class="text-gray-400 text-sm mb-4">Graduating with a Bachelor of Science specialized in Statistics, maintaining advanced academic performance thresholds.</p>
+                <div class="text-blue-400 font-bold text-sm tracking-wide bg-blue-500/5 inline-block px-2.5 py-1 rounded border border-blue-500/10">CGPA: 9.20</div>
+            </div>
+
+            <div class="glass-panel p-8 rounded-2xl transition hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 text-xl">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h3 class="heading-font font-bold text-lg text-white mb-2">Core Competency</h3>
+                <p class="text-gray-400 text-sm mb-4">Deep immersion into OOP structures, relational logic designs, structural query optimizations, and web interface architectures.</p>
+                <div class="text-indigo-400 font-bold text-sm tracking-wide bg-indigo-500/5 inline-block px-2.5 py-1 rounded border border-indigo-500/10">Backend & Web focus</div>
+            </div>
+
+            <div class="glass-panel p-8 rounded-2xl transition hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-6 text-xl">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <h3 class="heading-font font-bold text-lg text-white mb-2">Technical Vision</h3>
+                <p class="text-gray-400 text-sm mb-4">Applying enterprise automation systems alongside intelligent data pipelines to build future-ready application codebases.</p>
+                <div class="text-purple-400 font-bold text-sm tracking-wide bg-purple-500/5 inline-block px-2.5 py-1 rounded border border-purple-500/10">Automation & AI Ready</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-950/30 border-y border-gray-900">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="heading-font text-2xl sm:text-3xl font-bold text-white mb-3">Technical Architecture</h2>
+                <p class="text-gray-400 text-sm">Engineered domain capabilities across software development toolchains.</p>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <div class="flex justify-between mb-2 text-sm font-medium">
+                        <span class="text-gray-300"><i class="fa-brands fa-java text-blue-400 mr-2 w-4"></i> Java Standard Edition (OOP, Collections)</span>
+                        <span class="text-gray-400">90%</span>
+                    </div>
+                    <div class="w-full bg-gray-900 h-2 rounded-full overflow-hidden border border-gray-800">
+                        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 h-full rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2 text-sm font-medium">
+                        <span class="text-gray-300"><i class="fa-solid fa-database text-blue-400 mr-2 w-4"></i> Relational Databases & SQL (Queries, Joins, Normalization)</span>
+                        <span class="text-gray-400">85%</span>
+                    </div>
+                    <div class="w-full bg-gray-900 h-2 rounded-full overflow-hidden border border-gray-800">
+                        <div class="bg-gradient-to-r from-blue-500 to-indigo-500 h-full rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2 text-sm font-medium">
+                        <span class="text-gray-300"><i class="fa-solid fa-code text-indigo-400 mr-2 w-4"></i> Web Technologies (HTML5, CSS3, Modern JavaScript)</span>
+                        <span class="text-gray-400">85%</span>
+                    </div>
+                    <div class="w-full bg-gray-900 h-2 rounded-full overflow-hidden border border-gray-800">
+                        <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-full rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2 text-sm font-medium">
+                        <span class="text-gray-300"><i class="fa-solid fa-robot text-purple-400 mr-2 w-4"></i> Intelligent Ecosystems (Machine Learning Pipelines, RPA Frameworks)</span>
+                        <span class="text-gray-400">70%</span>
+                    </div>
+                    <div class="w-full bg-gray-900 h-2 rounded-full overflow-hidden border border-gray-800">
+                        <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-full rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-20 max-w-3xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="heading-font text-2xl sm:text-3xl font-bold text-white mb-3">Industry Internships</h2>
+            <p class="text-gray-400 text-sm">Practical tech validation within rigorous collaborative programs.</p>
+        </div>
+
+        <div class="relative border-l border-gray-800 ml-4 space-y-12">
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-gray-900 transition-transform group-hover:scale-125"></div>
+                <span class="text-xs font-semibold text-blue-400 tracking-wider uppercase bg-blue-500/5 px-2 py-0.5 rounded border border-blue-500/10">2025</span>
+                <h3 class="heading-font text-xl font-bold mt-2 text-white group-hover:text-blue-400 transition-colors">Google AI/ML Virtual Internship</h3>
+                <p class="text-xs text-gray-500 font-medium mb-3">Facilitated via EduSkills & AICTE</p>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Immersive deep dive into production-level computer vision layers, natural language data processing matrices, structural hyperparameter optimizations, and foundational artificial intelligence models.
+                </p>
+            </div>
+
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-gray-900 transition-transform group-hover:scale-125"></div>
+                <span class="text-xs font-semibold text-indigo-400 tracking-wider uppercase bg-indigo-500/5 px-2 py-0.5 rounded border border-indigo-500/10">2025</span>
+                <h3 class="heading-font text-xl font-bold mt-2 text-white group-hover:text-indigo-400 transition-colors">Robotic Process Automation Externship</h3>
+                <p class="text-xs text-gray-500 font-medium mb-3">Partnered with Blue Prism & AICTE</p>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Designed and mapped robust enterprise-level process workflow automations, exception handling sequences, object configurations, and active production runtime bot logic modules.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-950/30 border-t border-gray-900">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="heading-font text-2xl sm:text-3xl font-bold text-white mb-3">Technical Deployments</h2>
+                <p class="text-gray-400 text-sm">Showcasing functional architectures and programming implementations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-gray-700 transition flex flex-col justify-between">
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20 uppercase tracking-wider">Frontend Application</span>
+                            <div class="text-gray-500 text-lg"><i class="fa-solid fa-utensils"></i></div>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors">Recipe Finder Platform</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            An intuitive UI/UX engine built for real-time dynamic ingredient mapping, custom meal parameter filtering, and highly optimized cross-device layout performance rendering.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-md bg-gray-900 text-gray-400 border border-gray-800 text-xs font-medium">HTML5</span>
+                            <span class="px-2.5 py-1 rounded-md bg-gray-900 text-gray-400 border border-gray-800 text-xs font-medium">CSS3</span>
+                            <span class="px-2.5 py-1 rounded-md bg-gray-900 text-gray-400 border border-gray-800 text-xs font-medium">Modern JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="p-6 sm:p-8 pt-0 border-t border-gray-900/50 mt-auto flex items-center gap-4">
+                        <a href="https://github.com/jaya-1713" target="_blank" class="text-xs text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors">
+                            <i class="fa-brands fa-github"></i> Repository Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-gray-700 transition flex flex-col justify-between">
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20 uppercase tracking-wider">Data Architecture</span>
+                            <div class="text-gray-500 text-lg"><i class="fa-solid fa-database"></i></div>
+                        </div>
+                        <h3 class="heading-font text-xl font-bold mb-3 text-white group-hover:text-purple-400 transition-colors">SQL Database Schema Systems</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                            Designed structured relational normalization layouts, optimized sub-queries, structured transaction integrity rules, and scalable indexed structural schemas.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 rounded-md bg-gray-900 text-gray-400 border border-gray-800 text-xs font-medium">MySQL</span>
+                            <span class="px-2.5 py-1 rounded-md bg-gray-900 text-gray-400 border border-gray-800 text-xs font-medium">Relational Schema</span>
+                        </div>
+                    </div>
+                    <div class="p-6 sm:p-8 pt-0 border-t border-gray-900/50 mt-auto flex items-center gap-4">
+                        <a href="https://github.com/jaya-1713" target="_blank" class="text-xs text-gray-400 hover:text-white flex items-center gap-1.5 transition-colors">
+                            <i class="fa-brands fa-github"></i> Core Structure
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 max-w-4xl mx-auto px-4 border-t border-gray-900">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="heading-font text-2xl sm:text-3xl font-bold text-white mb-3">Education Matrix</h2>
+            <p class="text-gray-400 text-sm">Solid tracking across quantitative sciences and foundational analytics.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="glass-panel p-6 sm:p-8 rounded-2xl relative border-l-4 border-l-blue-500">
+                <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider block mb-2">Graduation Stream</span>
+                <h3 class="heading-font text-lg font-bold text-white mb-1">Bachelor of Science (B.Sc. Statistics)</h3>
+                <p class="text-gray-400 text-sm mb-4">Aditya Degree College, Asilmetta</p>
+                <div class="text-xs text-gray-500 font-medium">Cumulative Score: <span class="text-white font-bold ml-1">CGPA 9.20</span></div>
+            </div>
+
+            <div class="glass-panel p-6 sm:p-8 rounded-2xl relative border-l-4 border-l-indigo-500">
+                <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider block mb-2">Intermediate Framework</span>
+                <h3 class="heading-font text-lg font-bold text-white mb-1">MPC (Mathematics, Physics, Chemistry)</h3>
+                <p class="text-gray-400 text-sm mb-4">Sri Chaitanya Junior College</p>
+                <div class="text-xs text-gray-500 font-medium">Cumulative Score: <span class="text-white font-bold ml-1">CGPA 7.90</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 max-w-xl mx-auto px-4 border-t border-gray-900">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="heading-font text-2xl sm:text-3xl font-bold text-white mb-3">Initiate Connection</h2>
+            <p class="text-gray-400 text-sm">Submit strategic outreach inquiries or direct career opportunity vectors.</p>
+        </div>
+
+        <!-- Contact Method Matrix -->
+        <div class="glass-panel p-4 rounded-xl flex items-center justify-center gap-3 mb-8 border border-blue-500/10 bg-blue-500/5">
+            <i class="fa-solid fa-envelope text-blue-400"></i>
+            <span class="text-xs font-medium text-gray-300">Direct Endpoint:</span>
+            <a href="mailto:joshuyepuri@gmail.com" class="text-xs font-bold text-blue-400 hover:underline">joshuyepuri@gmail.com</a>
+        </div>
+
+        <form class="space-y-5" onsubmit="event.preventDefault(); alert('Message transmission simulated successfully to joshuyepuri@gmail.com');">
+            <div>
+                <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Identity Signature</label>
+                <input type="text" name="name" placeholder="Full Name" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-blue-500 transition-colors text-sm placeholder-gray-600">
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Communication Endpoint</label>
+                <input type="email" name="_replyto" placeholder="email@enterprise.com" required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-blue-500 transition-colors text-sm placeholder-gray-600">
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Outreach Context Payload</label>
+                <textarea name="message" rows="4" placeholder="Type your core query parameters here..." required class="w-full bg-gray-950 border border-gray-800 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-blue-500 transition-colors text-sm placeholder-gray-600"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3.5 rounded-xl transition shadow-lg shadow-blue-500/20 text-sm tracking-wide uppercase">
+                Dispatch System Message
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-900 text-center bg-gray-950/20">
+        <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+            <p>&copy; 2026 Yepuri Jaya Naga Sri. All professional metrics fully authenticated.</p>
+            <div class="flex gap-6">
+                <a href="mailto:joshuyepuri@gmail.com" class="hover:text-gray-300 transition-colors"><i class="fa-solid fa-envelope mr-1"></i> Email</a>
+                <a href="https://github.com/jaya-1713" target="_blank" class="hover:text-gray-300 transition-colors"><i class="fa-brands fa-github mr-1"></i> GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
